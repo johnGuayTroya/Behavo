@@ -1,0 +1,324 @@
+{
+  "version": "0.3.0",
+  "scope": "tree",
+  "id": "13658db4-3460-4085-b181-d903ab403770",
+  "title": "A behavior tree",
+  "description": "",
+  "root": "e4df36e0-5072-44f8-8e8f-9713fe7dec92",
+  "properties": {},
+  "nodes": {
+    "e4df36e0-5072-44f8-8e8f-9713fe7dec92": {
+      "id": "e4df36e0-5072-44f8-8e8f-9713fe7dec92",
+      "name": "RepeatUntilFailure",
+      "title": "Repeat Until Failure",
+      "description": "",
+      "properties": {
+        "maxLoop": -1
+      },
+      "display": {
+        "x": 168,
+        "y": 0
+      },
+      "child": "8f8056ee-4dbd-4783-8de3-d9f2a05c4454"
+    },
+    "b1ece82e-12a6-4d4e-9bb2-15f81c21dbd1": {
+      "id": "b1ece82e-12a6-4d4e-9bb2-15f81c21dbd1",
+      "name": "GetNextPosition",
+      "title": "GetNextPosition",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 564,
+        "y": 252
+      }
+    },
+    "7f73e5d7-a105-4738-87fb-743ba329d1d1": {
+      "id": "7f73e5d7-a105-4738-87fb-743ba329d1d1",
+      "name": "Sequence",
+      "title": "Sequence",
+      "description": "Patrol",
+      "properties": {},
+      "display": {
+        "x": 420,
+        "y": 336
+      },
+      "children": [
+        "b1ece82e-12a6-4d4e-9bb2-15f81c21dbd1",
+        "29f27da3-bb98-40a3-baa5-cdfc3430ed7e"
+      ]
+    },
+    "29f27da3-bb98-40a3-baa5-cdfc3430ed7e": {
+      "id": "29f27da3-bb98-40a3-baa5-cdfc3430ed7e",
+      "name": "MoveToPosition",
+      "title": "Move",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 564,
+        "y": 348
+      }
+    },
+    "8f8056ee-4dbd-4783-8de3-d9f2a05c4454": {
+      "id": "8f8056ee-4dbd-4783-8de3-d9f2a05c4454",
+      "name": "Priority",
+      "title": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 348,
+        "y": 0
+      },
+      "children": [
+        "ae1d73ce-db2f-4bf9-bf8c-0c2781954d3f",
+        "7f73e5d7-a105-4738-87fb-743ba329d1d1"
+      ]
+    },
+    "ae1d73ce-db2f-4bf9-bf8c-0c2781954d3f": {
+      "id": "ae1d73ce-db2f-4bf9-bf8c-0c2781954d3f",
+      "name": "Sequence",
+      "title": "Sequence",
+      "description": "Hungry",
+      "properties": {},
+      "display": {
+        "x": 408,
+        "y": -144
+      },
+      "children": [
+        "ea786b96-0878-4aca-89a8-531a531900af",
+        "228bf0e5-cd6c-4705-87d8-c2996b8befd5",
+        "57474d0c-73ce-486d-a4d2-1056c40922e5"
+      ]
+    },
+    "7d64459a-6d67-4028-b919-505ef1f1ee77": {
+      "id": "7d64459a-6d67-4028-b919-505ef1f1ee77",
+      "name": "FoodAvailable?",
+      "title": "FoodAvailable?",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 684,
+        "y": -204
+      }
+    },
+    "228bf0e5-cd6c-4705-87d8-c2996b8befd5": {
+      "id": "228bf0e5-cd6c-4705-87d8-c2996b8befd5",
+      "name": "Priority",
+      "title": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 516,
+        "y": -132
+      },
+      "children": [
+        "7d64459a-6d67-4028-b919-505ef1f1ee77",
+        "8e3131b5-5df2-4c21-84f0-e12e59efcfe2",
+        "c2e2d5ca-1dce-40b1-86e8-f75d6efe52c3"
+      ]
+    },
+    "65a51a19-6c31-4ae0-94d1-2c637adddd7a": {
+      "id": "65a51a19-6c31-4ae0-94d1-2c637adddd7a",
+      "name": "FindFood",
+      "title": "FindFood",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 900,
+        "y": 0
+      }
+    },
+    "c2e2d5ca-1dce-40b1-86e8-f75d6efe52c3": {
+      "id": "c2e2d5ca-1dce-40b1-86e8-f75d6efe52c3",
+      "name": "Sequence",
+      "title": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 612,
+        "y": 0
+      },
+      "children": [
+        "65a51a19-6c31-4ae0-94d1-2c637adddd7a",
+        "7ec23e02-85e6-4b4d-89ed-2b80b749afd0",
+        "f5df97ce-03b9-44eb-a0e4-5932b90eccd9"
+      ]
+    },
+    "7ec23e02-85e6-4b4d-89ed-2b80b749afd0": {
+      "id": "7ec23e02-85e6-4b4d-89ed-2b80b749afd0",
+      "name": "MoveToPosition",
+      "title": "Move",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 900,
+        "y": 48
+      }
+    },
+    "57474d0c-73ce-486d-a4d2-1056c40922e5": {
+      "id": "57474d0c-73ce-486d-a4d2-1056c40922e5",
+      "name": "Eat",
+      "title": "Eat",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 540,
+        "y": 84
+      }
+    },
+    "ea786b96-0878-4aca-89a8-531a531900af": {
+      "id": "ea786b96-0878-4aca-89a8-531a531900af",
+      "name": "Hungry?",
+      "title": "Hungry?",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 516,
+        "y": -288
+      }
+    },
+    "f5df97ce-03b9-44eb-a0e4-5932b90eccd9": {
+      "id": "f5df97ce-03b9-44eb-a0e4-5932b90eccd9",
+      "name": "Wait",
+      "title": "Wait <milliseconds>ms",
+      "description": "",
+      "properties": {
+        "milliseconds": 1000,
+        "hola": "mundo"
+      },
+      "display": {
+        "x": 900,
+        "y": 96
+      }
+    },
+    "84e85fb9-10d8-4c75-b960-3cc6beeae368": {
+      "id": "84e85fb9-10d8-4c75-b960-3cc6beeae368",
+      "name": "CreateFruitMix",
+      "title": "CreateFruitMix",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 768,
+        "y": -132
+      }
+    },
+    "00cacd57-21b0-4a25-83e0-e1a2f83e6ac3": {
+      "id": "00cacd57-21b0-4a25-83e0-e1a2f83e6ac3",
+      "name": "Wait",
+      "title": "Wait <milliseconds>ms",
+      "description": "",
+      "properties": {
+        "milliseconds": 2000,
+        "hola": "mundo"
+      },
+      "display": {
+        "x": 768,
+        "y": -72
+      }
+    },
+    "8e3131b5-5df2-4c21-84f0-e12e59efcfe2": {
+      "id": "8e3131b5-5df2-4c21-84f0-e12e59efcfe2",
+      "name": "Sequence",
+      "title": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 624,
+        "y": -120
+      },
+      "children": [
+        "84e85fb9-10d8-4c75-b960-3cc6beeae368",
+        "00cacd57-21b0-4a25-83e0-e1a2f83e6ac3"
+      ]
+    }
+  },
+  "display": {
+    "camera_x": 87,
+    "camera_y": 407.5,
+    "camera_z": 1,
+    "x": 0,
+    "y": 0
+  },
+  "custom_nodes": [
+    {
+      "version": "0.3.0",
+      "scope": "node",
+      "name": "FoodAvailable?",
+      "category": "condition",
+      "title": null,
+      "description": null,
+      "properties": {}
+    },
+    {
+      "version": "0.3.0",
+      "scope": "node",
+      "name": "GetNextPosition",
+      "category": "action",
+      "title": null,
+      "description": null,
+      "properties": {}
+    },
+    {
+      "version": "0.3.0",
+      "scope": "node",
+      "name": "Hungry?",
+      "category": "condition",
+      "title": null,
+      "description": null,
+      "properties": {}
+    },
+    {
+      "version": "0.3.0",
+      "scope": "node",
+      "name": "MoveToPosition",
+      "category": "action",
+      "title": "Move",
+      "description": null,
+      "properties": {}
+    },
+    {
+      "version": "0.3.0",
+      "scope": "node",
+      "name": "Eat",
+      "category": "action",
+      "title": null,
+      "description": null,
+      "properties": {}
+    },
+    {
+      "version": "0.3.0",
+      "scope": "node",
+      "name": "FindFood",
+      "category": "action",
+      "title": null,
+      "description": null,
+      "properties": {}
+    },
+    {
+      "version": "0.3.0",
+      "scope": "node",
+      "name": "CreateFruitMix",
+      "category": "action",
+      "title": null,
+      "description": null,
+      "properties": {}
+    },
+    {
+      "version": "0.3.0",
+      "scope": "node",
+      "name": "WaitCraft",
+      "category": "action",
+      "title": null,
+      "description": null,
+      "properties": {}
+    },
+    {
+      "version": "0.3.0",
+      "scope": "node",
+      "name": "Smoothie?",
+      "category": "condition",
+      "title": null,
+      "description": null,
+      "properties": {}
+    }
+  ]
+}
