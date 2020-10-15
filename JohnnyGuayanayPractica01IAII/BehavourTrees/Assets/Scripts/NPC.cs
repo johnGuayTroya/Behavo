@@ -31,7 +31,7 @@ public class NPC : MonoBehaviour
     [Header("Hungry vars")]
     [SerializeField]private bool iHungry=false;
     public Image hungryBar;
-    public float hungryTime = 5f;
+    public float hungryTime = 10f;
     public bool consumo = false;
     public Text items;
     private float initialHungry;

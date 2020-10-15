@@ -2402,8 +2402,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 326, y: 43}
-  m_SizeDelta: {x: 591.15, y: 30}
+  m_AnchoredPosition: {x: 326, y: 60.2}
+  m_SizeDelta: {x: 591.2, y: 64.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &520024104
 MonoBehaviour:
@@ -2427,10 +2427,10 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 17
+    m_FontSize: 25
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 2
     m_MaxSize: 40
     m_Alignment: 0
     m_AlignByGeometry: 0
@@ -2438,7 +2438,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 
+  m_Text: hi
 --- !u!222 &520024105
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5385,8 +5385,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 298, y: -98}
-  m_SizeDelta: {x: 591.15, y: 30}
+  m_AnchoredPosition: {x: 79.9, y: -120.5}
+  m_SizeDelta: {x: 289.8, y: 74.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1250739474
 MonoBehaviour:
@@ -5410,7 +5410,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 17
+    m_FontSize: 29
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
@@ -9267,7 +9267,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: d90a8faf6fb9540b084ef2825cc3a5dc, type: 3}
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 3
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -9294,15 +9294,15 @@ RectTransform:
   m_GameObject: {fileID: 1829327272}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 5.6, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1816632284}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 38, y: -35}
-  m_SizeDelta: {x: 146, y: 28.9}
+  m_AnchoredPosition: {x: 38, y: -35.5}
+  m_SizeDelta: {x: 39.2, y: 31.71}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!1 &1830675995 stripped
 GameObject:
@@ -11318,8 +11318,17 @@ PrefabInstance:
       propertyPath: _smoothie1
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 347957889, guid: 36eb3c827762dd14799cbf650588485f, type: 3}
+      propertyPath: hungryTime
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 347957895, guid: 36eb3c827762dd14799cbf650588485f, type: 3}
       propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3316688880731895271, guid: 36eb3c827762dd14799cbf650588485f,
+        type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
